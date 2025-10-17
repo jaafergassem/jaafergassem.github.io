@@ -1,74 +1,113 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio - Jaafer Gassem | Data Scientist</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jaafer Gassem | Data Scientist Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" />
 </head>
 
 <body>
-  <header>
-    <h1>👋 Bonjour, je suis <span class="highlight">Jaafer Gassem</span></h1>
-    <p>Data Scientist | AI Developer | Instructor</p>
-    <div class="links">
-      <a href="https://github.com/jaafergassem" target="_blank">GitHub</a>
-      <a href="https://www.kaggle.com/" target="_blank">Kaggle</a>
-      <a href="https://www.linkedin.com/in/jaafer-gassem/" target="_blank">LinkedIn</a>
-      <a href="CV_jaafer.pdf" target="_blank">Mon CV</a>
-    </div>
-  </header>
+  <!-- ====== NAVBAR ====== -->
+  <nav class="navbar">
+    <h2 class="logo">Jaafer<span>Gassem</span></h2>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-  <section id="about">
-    <h2>À propos</h2>
+  <!-- ====== HOME ====== -->
+  <section id="home" class="hero">
+    <img src="assets/profile.jpg" alt="Profile Photo" class="profile-pic" />
+    <h1>Hi, I'm <span class="highlight">Jaafer Gassem</span></h1>
+    <p>Data Scientist | AI Developer | Instructor</p>
+    <div class="buttons">
+      <a href="assets/CV_jaafer.pdf" class="btn" target="_blank">Download CV</a>
+      <a href="#contact" class="btn-secondary">Contact Me</a>
+    </div>
+  </section>
+
+  <!-- ====== ABOUT ====== -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
     <p>
-      Passionné par la science des données, j’aime transformer des données brutes en solutions intelligentes.
-      J’ai obtenu un Master en Data Science et Intelligence Artificielle à l’ISI Mahdia.
-      J’ai travaillé sur plusieurs projets en Machine Learning, NLP et Computer Vision.
+      I am a passionate <strong>Data Scientist</strong> with expertise in
+      <strong>Machine Learning</strong>, <strong>Computer Vision</strong>, and
+      <strong>AI Systems</strong>. I hold a Master’s degree in Data Science and Artificial Intelligence
+      from the Higher Institute of Computer Science of Mahdia, Tunisia.
+    </p>
+    <p>
+      My goal is to build intelligent systems that transform data into meaningful and actionable insights.
     </p>
   </section>
 
-  <section id="projects">
-    <h2>Projets récents</h2>
-
-    <div class="project-card">
-      <h3>🛒 SnapMarket – Marketplace intelligente</h3>
-      <p>
-        Application web d’e-commerce intelligente intégrant l’IA pour <strong>identifier un produit à partir d’une image</strong>,
-        compléter automatiquement ses caractéristiques techniques et <strong>prédire son prix</strong>.
-      </p>
-      <ul>
-        <li>Reconnaissance d’image via CLIP + FAISS</li>
-        <li>Génération de description et fiche technique avec LLaVA et Mistral</li>
-        <li>Modèle de prédiction de prix CatBoost (R² = 0.83)</li>
-        <li>Déploiement sur Django + Azure</li>
-      </ul>
-      <a href="https://github.com/jaafergassem/SnapMarket" target="_blank" class="btn">Voir sur GitHub</a>
-    </div>
-
-    <div class="project-card">
-      <h3>🧠 Détection de cancer du poumon</h3>
-      <p>Classification d’images médicales à l’aide d’un modèle Inception v3 (Python, Keras).</p>
-    </div>
-
-    <div class="project-card">
-      <h3>💬 Analyse de sentiments</h3>
-      <p>Application NLP de classification d’avis utilisateurs (Scikit-learn, spaCy, BERT).</p>
+  <!-- ====== SKILLS ====== -->
+  <section id="skills" class="section light-bg">
+    <h2>Technical Skills</h2>
+    <div class="skills-grid">
+      <span>Python</span>
+      <span>SQL</span>
+      <span>Scikit-learn</span>
+      <span>TensorFlow</span>
+      <span>Pandas</span>
+      <span>Power BI</span>
+      <span>Azure</span>
+      <span>Databricks</span>
+      <span>Hadoop</span>
+      <span>MongoDB</span>
     </div>
   </section>
 
-  <section id="skills">
-    <h2>Compétences techniques</h2>
-    <ul>
-      <li><strong>Langages :</strong> Python, R, SQL, JavaScript, Java, C++</li>
-      <li><strong>Frameworks :</strong> Django, TensorFlow, Keras, Scikit-learn, Pandas, NumPy</li>
-      <li><strong>Big Data :</strong> Spark, Hadoop, MongoDB</li>
-      <li><strong>Outils :</strong> Power BI, Tableau, Azure, Databricks</li>
-    </ul>
+  <!-- ====== PROJECTS ====== -->
+  <section id="projects" class="section">
+    <h2>Featured Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>🛒 SnapMarket</h3>
+        <p>
+          Intelligent e-commerce system that identifies a product from an image, completes missing
+          attributes, and predicts its price using AI models.
+        </p>
+        <a href="https://github.com/jaafergassem/SnapMarket" target="_blank" class="btn">View on GitHub</a>
+      </div>
+
+      <div class="project-card">
+        <h3>🧠 Lung Cancer Classification</h3>
+        <p>
+          Image classification using Inception v3 to detect lung cancer based on X-ray data.
+        </p>
+        <a href="https://github.com/jaafergassem/LungCancerClassification" target="_blank" class="btn">View on GitHub</a>
+      </div>
+
+      <div class="project-card">
+        <h3>💬 Sentiment Analysis App</h3>
+        <p>
+          NLP-based web app for text sentiment classification using Scikit-learn and spaCy.
+        </p>
+        <a href="https://github.com/jaafergassem/SentimentAnalysis" target="_blank" class="btn">View on GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== CONTACT ====== -->
+  <section id="contact" class="section light-bg">
+    <h2>Contact</h2>
+    <p>📧 <a href="mailto:jaafer.gassem@gmail.com">jaafer.gassem@gmail.com</a></p>
+    <div class="social-links">
+      <a href="https://github.com/jaafergassem" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/jaafer-gassem/" target="_blank">LinkedIn</a>
+      <a href="https://www.kaggle.com/jaafergassem" target="_blank">Kaggle</a>
+    </div>
   </section>
 
   <footer>
-    <p>📫 Contact : <a href="mailto:jaafer.gassem@gmail.com">jaafer.gassem@gmail.com</a></p>
+    <p>© 2025 Jaafer Gassem | All Rights Reserved.</p>
   </footer>
 </body>
 </html>
