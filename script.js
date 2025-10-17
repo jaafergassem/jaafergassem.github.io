@@ -1,9 +1,18 @@
-// Background code animation (particles + flow)
+// Smooth fade-in for sections
+window.addEventListener('scroll', () => {
+  document.querySelectorAll('.section').forEach(section => {
+    const rect = section.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 100) {
+      section.classList.add('visible');
+    }
+  });
+});
+
+// Dynamic animated background (SoftSquare style)
 const canvas = document.getElementById('background-animation');
 const ctx = canvas.getContext('2d');
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
-
 let particles = [];
 
 class Particle {
@@ -30,22 +39,4 @@ class Particle {
 
 function init() {
   particles = [];
-  for (let i = 0; i < 180; i++) {
-    particles.push(new Particle());
-  }
-}
-
-function animate() {
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
-  particles.forEach(p => { p.update(); p.draw(); });
-  requestAnimationFrame(animate);
-}
-
-window.addEventListener('resize', () => {
-  canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;
-  init();
-});
-
-init();
-animate();
+  for
