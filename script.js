@@ -1,4 +1,4 @@
-// Smooth fade-in for sections
+// Fade-in for sections
 window.addEventListener('scroll', () => {
   document.querySelectorAll('.section').forEach(section => {
     const rect = section.getBoundingClientRect();
@@ -8,11 +8,12 @@ window.addEventListener('scroll', () => {
   });
 });
 
-// Dynamic animated background
+// Animated background (particles)
 const canvas = document.getElementById('background-animation');
 const ctx = canvas.getContext('2d');
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
+
 let particles = [];
 
 class Particle {
@@ -41,15 +42,18 @@ function init() {
   particles = [];
   for (let i = 0; i < 180; i++) particles.push(new Particle());
 }
+
 function animate() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   particles.forEach(p => { p.update(); p.draw(); });
   requestAnimationFrame(animate);
 }
+
 window.addEventListener('resize', () => {
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
   init();
 });
+
 init();
 animate();
