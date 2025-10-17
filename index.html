@@ -10,7 +10,10 @@
 </head>
 
 <body>
-  <!-- ====== NAVBAR ====== -->
+  <!-- ===== BACKGROUND ANIMATION ===== -->
+  <canvas id="background-animation"></canvas>
+
+  <!-- ===== NAVBAR ===== -->
   <nav class="navbar">
     <h2 class="logo">Jaafer<span>Gassem</span></h2>
     <ul>
@@ -22,7 +25,7 @@
     </ul>
   </nav>
 
-  <!-- ====== HERO ====== -->
+  <!-- ===== HERO ===== -->
   <section id="home" class="hero">
     <div class="hero-container">
       <div class="profile-wrapper">
@@ -37,78 +40,49 @@
     </div>
   </section>
 
-  <!-- ====== ABOUT ====== -->
-  <section id="about" class="section">
-    <h2>About Me</h2>
-    <p>
-      I am a passionate <strong>Data Scientist</strong> specialized in
-      <strong>Artificial Intelligence</strong>, <strong>Machine Learning</strong>,
-      and <strong>Computer Vision</strong>. I hold a Master’s degree in Data Science and Artificial Intelligence
-      from the Higher Institute of Computer Science of Mahdia, Tunisia.
-    </p>
-    <p>
-      I focus on creating intelligent systems that transform complex data into actionable insights,
-      improving e-commerce, education, and automation.
-    </p>
-  </section>
-
-  <!-- ====== SKILLS ====== -->
-  <section id="skills" class="section light-bg">
-    <h2>Technical Skills</h2>
-    <div class="skills-grid">
-      <span>Python</span>
-      <span>SQL</span>
-      <span>Scikit-learn</span>
-      <span>TensorFlow</span>
-      <span>PyTorch</span>
-      <span>Pandas</span>
-      <span>Power BI</span>
-      <span>Azure</span>
-      <span>Databricks</span>
-      <span>Hadoop</span>
-      <span>MongoDB</span>
-    </div>
-  </section>
-
-  <!-- ====== PROJECTS ====== -->
+  <!-- ===== PROJECTS ===== -->
   <section id="projects" class="section">
     <h2>Featured Projects</h2>
     <div class="projects-grid">
-
       <div class="project-card">
-        <h3>🛒 SnapMarket</h3>
-        <p>
-          AI-powered e-commerce platform that identifies a product from an image, completes missing attributes, and predicts its price.
-        </p>
-        <a href="https://github.com/jaafergassem/SnapMarket" target="_blank" class="btn">View on GitHub</a>
+        <img src="assets/snapmarket.png" alt="SnapMarket Project" class="project-img">
+        <div class="project-info">
+          <h3>🛒 SnapMarket</h3>
+          <p>AI-powered e-commerce platform that identifies a product from an image, completes missing attributes, and predicts its price.</p>
+          <a href="https://github.com/jaafergassem/SnapMarket" target="_blank" class="btn">View on GitHub</a>
+        </div>
       </div>
 
       <div class="project-card">
-        <h3>🧠 Lung Cancer Detection</h3>
-        <p>
-          Built an Inception v3 CNN model to classify lung cancer from medical images with high accuracy.
-        </p>
-        <a href="https://github.com/jaafergassem/LungCancerClassification" target="_blank" class="btn">View on GitHub</a>
+        <img src="assets/lungcancer.png" alt="Lung Cancer Project" class="project-img">
+        <div class="project-info">
+          <h3>🧠 Lung Cancer Detection</h3>
+          <p>Built an Inception v3 CNN model to classify lung cancer from medical images with high accuracy.</p>
+          <a href="https://github.com/jaafergassem/LungCancerClassification" target="_blank" class="btn">View on GitHub</a>
+        </div>
       </div>
 
       <div class="project-card">
-        <h3>💬 Sentiment Analysis</h3>
-        <p>
-          Natural language processing model that classifies customer reviews using Scikit-learn and spaCy.
-        </p>
-        <a href="https://github.com/jaafergassem/SentimentAnalysis" target="_blank" class="btn">View on GitHub</a>
+        <img src="assets/sentiment.png" alt="Sentiment Project" class="project-img">
+        <div class="project-info">
+          <h3>💬 Sentiment Analysis</h3>
+          <p>Natural language processing model that classifies customer reviews using Scikit-learn and spaCy.</p>
+          <a href="https://github.com/jaafergassem/SentimentAnalysis" target="_blank" class="btn">View on GitHub</a>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ====== CONTACT ====== -->
+  <!-- ===== CONTACT ===== -->
   <section id="contact" class="section light-bg">
     <h2>Contact</h2>
-    <p>📧 <a href="mailto:jaafer.gassem@gmail.com">jaafer.gassem@gmail.com</a></p>
-    <div class="social-links">
-      <a href="https://github.com/jaafergassem" target="_blank">GitHub</a>
-      <a href="https://www.linkedin.com/in/jaafer-gassem/" target="_blank">LinkedIn</a>
-      <a href="https://www.kaggle.com/jaafergassem" target="_blank">Kaggle</a>
+    <div class="contact-container">
+      <p>📧 <a href="mailto:jaafer.gassem@gmail.com">jaafer.gassem@gmail.com</a></p>
+      <div class="social-links">
+        <a href="https://github.com/jaafergassem" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/jaafer-gassem/" target="_blank">LinkedIn</a>
+        <a href="https://www.kaggle.com/jaafergassem" target="_blank">Kaggle</a>
+      </div>
     </div>
   </section>
 
